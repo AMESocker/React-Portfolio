@@ -9,16 +9,16 @@ function Navigation() {
   const [currentPage, setCurrentPage] = useState("About");
 
   const renderPage = () => {
-    if (currentPage === "About") {
-      return <About />;
+    if (currentPage === "resume") {
+      return <Resume />;
     }
     if (currentPage === "contact") {
       return <Contact />;
     }
-    if (currentPage === "Portfolio") {
+    if (currentPage === "portfolio") {
       return <Portfolio />;
     }
-    return <Resume />;
+    return <About />;
   };
   const handlePageChange = (page) => setCurrentPage(page);
 
