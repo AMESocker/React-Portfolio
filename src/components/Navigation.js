@@ -20,11 +20,11 @@ function Navigation() {
     }
     return <About />;
   };
-  const handlePageChange = (page) => setCurrentPage(page);
+  const pageChange = (page) => setCurrentPage(page);
 
   return (
     <div>
-      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Header currentPage={currentPage} pageChange={pageChange} />
       {renderPage()}
     </div>
   );

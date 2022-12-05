@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 
-function Header({ currentPage, handlePageChange }) {
+function Header({ currentPage, pageChange }) {
   return (
     <div className="container">
       <nav className="navbar navbar-expand-lg">
@@ -29,7 +29,7 @@ function Header({ currentPage, handlePageChange }) {
                 }
                 aria-current="page"
                 href="#aboutMe"
-                onClick={() => handlePageChange("about")}
+                onClick={() => pageChange("about")}
               >
                 About Me
               </a>
@@ -38,7 +38,7 @@ function Header({ currentPage, handlePageChange }) {
                   currentPage === "portfolio" ? "nav-link active" : "nav-link"
                 }
                 href="#portfolio"
-                onClick={() => handlePageChange("portfolio")}
+                onClick={() => pageChange("portfolio")}
               >
                 Portfolio
               </a>
@@ -47,7 +47,7 @@ function Header({ currentPage, handlePageChange }) {
                   currentPage === "contact" ? "nav-link active" : "nav-link"
                 }
                 href="#contact"
-                onClick={() => handlePageChange("contact")}
+                onClick={() => pageChange("contact")}
               >
                 Contact
               </a>
@@ -56,7 +56,7 @@ function Header({ currentPage, handlePageChange }) {
                   currentPage === "resume" ? "nav-link active" : "nav-link"
                 }
                 href="#resume"
-                onClick={() => handlePageChange("resume")}
+                onClick={() => pageChange("resume")}
               >
                 Resume
               </a>
