@@ -3,13 +3,13 @@ import React from "react";
 function Header({ currentPage, handlePageChange }) {
   return (
     <div className="container">
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+      <nav className="navbar navbar-expand-lg">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
             Aaron Socher
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup"
@@ -17,20 +17,21 @@ function Header({ currentPage, handlePageChange }) {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav">
+              {/*navtabs*/}  
               <a className={currentPage === 'aboutMe' ? 'nav-link active' : 'nav-link'} aria-current="page" href="#aboutMe" onClick={() => handlePageChange('aboutMe')}>
                 About Me
               </a>
-              <a class="nav-link" href="#">
+              <a className={currentPage === 'portfolio' ? 'nav-link active' : 'nav-link'} href="#portfolio" onClick={() => handlePageChange('portfolio')}>
                 Portfolio
               </a>
-              <a class="nav-link" href="#">
+              <a className={currentPage === 'contact' ? 'nav-link active' : 'nav-link'} href="#contact" onClick={() => handlePageChange('contact')}>
                 Contact
               </a>
-              <a class="nav-link disabled">
+              <a className={currentPage === 'resume' ? 'nav-link active' : 'nav-link'} href="#resume" onClick={() => handlePageChange('resume')}>
                 Resume</a>
             </div>
           </div>
