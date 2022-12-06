@@ -25,3 +25,4 @@ yarn-error.log*
 node_modules/
 .DS_Store/
 TODO.md
+src/components/pages/html.html

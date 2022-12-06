@@ -4,7 +4,7 @@ import "./Header.css";
 function Header({ currentPage, pageChange }) {
   return (
     <div className="container">
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar fixed-top navbar-expand-lg">
         <div className="container-fluid">
           <div className="navbar-brand">
             Aaron Socher

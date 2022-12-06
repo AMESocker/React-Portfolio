@@ -4,6 +4,7 @@ import About from "./pages/about";
 import Contact from "./pages/contact";
 import Portfolio from "./pages/portfolio";
 import Resume from "./pages/resume";
+import "../App.css";
 //Conditional Render
 function Navigation() {
   const [currentPage, setCurrentPage] = useState("About");
@@ -23,7 +24,7 @@ function Navigation() {
   const pageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
+    <div className='nav'>
       <Header currentPage={currentPage} pageChange={pageChange} />
       {renderPage()}
     </div>

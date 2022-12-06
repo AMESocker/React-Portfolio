@@ -3,10 +3,10 @@ import ProfileImage from '../files/profileImage.jpg';
 
 function About() {
     return (
-        <div>
-            <h1>About Me</h1>
+        <div className=' container'>
+            
             <img src={ProfileImage} alt="profile"></img>
-            <p className="App-header">Aaron Socher is a Jr Web Developer with training from UC Berkeley Extension Bootcamp. He has addition education experience in computer troubleshooting, electronic circuits and working with databases in an Geographic Information Systems environment. </p>
+            <div className="about">Aaron Socher is a Jr Web Developer with training from UC Berkeley Extension Bootcamp. He has addition education experience in computer troubleshooting, electronic circuits and working with databases in an Geographic Information Systems environment. </div>
         </div>
     );
 }

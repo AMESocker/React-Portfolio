@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+.about {
+  
+  text-align: center;
+}
+.nav {
+  background-color: #282c34;
+}

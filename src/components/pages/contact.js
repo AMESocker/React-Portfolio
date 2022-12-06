@@ -4,42 +4,42 @@ export default function Contact() {
   return (
     <div>
       
-      <div class="mb-3">
-        <label class="form-label">Name</label>
+      <div className="mb-3">
+        <label className="form-label">Name</label>
         <input
-          class="form-control form-control-sm"
+          className="form-control form-control-lg"
           type="text"
           placeholder="Name"
-          aria-label=".form-control-sm example"
+          aria-label=".form-control-lg example"
         ></input>
       </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">
+      <div className="mb-3">
+        <label for="exampleFormControlInput1" className="form-label">
           Email address
         </label>
         <input
           type="email"
-          class="form-control"
+          className="form-control"
           id="exampleFormControlInput1"
           placeholder="name@example.com"
         ></input>
       </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">
+      <div className="mb-3">
+        <label htmlFor="exampleFormControlTextarea1" className="form-label">
           Address
         </label>
         <textarea
-          class="form-control"
+          className="form-control"
           id="exampleFormControlTextarea1"
           rows="1"
         ></textarea>
       </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">
+      <div className="mb-3">
+        <label for="exampleFormControlTextarea1" className="form-label">
           Message
         </label>
         <textarea
-          class="form-control"
+          className="form-control"
           id="exampleFormControlTextarea1"
           rows="1"
         ></textarea>

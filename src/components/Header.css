@@ -1,11 +1,17 @@
 .nav-link.active {
     color: blue !important;
+    background-color: #282c34;
 }
 
 .nav-link {
     color: white !important;
+    background-color: #282c34;
 }
 
 .navbar-brand {
     color: white !important;
+    background-color: #282c34;
+}
+.navbar {
+    background-color: #282c34;
 }
